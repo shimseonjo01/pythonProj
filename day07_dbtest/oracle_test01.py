@@ -2,7 +2,7 @@ import cx_Oracle
 
 conn = cx_Oracle.connect('scott','tiger','localhost:1521/XE')
 cursor = conn.cursor()
-cursor.execute("select * from emp")
+cursor.execute("select * from emp where deptno = 10")
 
 # print(cursor)
 
